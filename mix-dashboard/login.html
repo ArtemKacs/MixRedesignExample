@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Вхід — Mix</title>
+  <link rel="stylesheet" href="login.css">
+  <script src="login.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Mix — головна">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 56 56" role="img">
+          <path d="M28 4 3 17.5 28 31l25-13.5L28 4Z" fill="#2788ff"/>
+          <path d="M11 23v13.2L28 46l17-9.8V23L28 32.2 11 23Z" fill="#2460ff"/>
+          <path d="M50 21v15" stroke="#8fbaff" stroke-width="3" stroke-linecap="round"/>
+          <circle cx="50" cy="39" r="2.5" fill="#8fbaff"/>
+        </svg>
+      </span>
+      <span>Mix</span>
+    </a>
+  </header>
+
+  <main class="page">
+    <section class="welcome-panel" aria-label="Вітання">
+      <div class="welcome-content">
+        <div class="eyebrow"><span class="eyebrow-dot"></span> Твій простір для навчання</div>
+        <h1>Раді бачити<br><span>тебе знову.</span></h1>
+        <p>Увійди до свого кабінету, щоб продовжити навчання та повернутися до улюблених дисциплін.</p>
+        <div class="learning-art" aria-hidden="true">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="book book-back"></div>
+          <div class="book book-middle"></div>
+          <div class="book book-front"></div>
+          <div class="cap">
+            <div class="cap-top"></div>
+            <div class="cap-base"></div>
+            <div class="cap-tassel"></div>
+          </div>
+          <span class="spark spark-one">✦</span>
+          <span class="spark spark-two">✧</span>
+          <span class="spark spark-three">✦</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="form-side">
+      <div class="login-card">
+        <a class="mobile-brand" href="#">Mix</a>
+        <div class="form-heading">
+          <div class="mini-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21V5.5Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+              <path d="M4 18.5A2.5 2.5 0 0 1 6.5 16H20M8 7h8M8 10h8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h2>Вхід до особистого кабінету</h2>
+          <p>Введи свої дані для продовження</p>
+        </div>
+
+        <form class="login-form" action="#" method="post">
+          <label for="email">Електронна пошта</label>
+          <div class="input-wrap">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m4 7 8 6 8-6"/></svg>
+            <input id="email" name="email" type="email" placeholder="name@example.com" autocomplete="email" required>
+          </div>
+
+          <div class="label-row">
+            <label for="password">Пароль</label>
+            <a class="text-link" href="#">Забули пароль?</a>
+          </div>
+          <div class="input-wrap">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="10" width="16" height="11" rx="2.5"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/><path d="M12 14v3"/></svg>
+            <input id="password" name="password" type="password" placeholder="Введи пароль" autocomplete="current-password" required>
+            <button class="toggle-password" type="button" aria-label="Показати пароль" title="Показати пароль">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2.5 12s3.4-6 9.5-6 9.5 6 9.5 6-3.4 6-9.5 6-9.5-6-9.5-6Z"/><circle cx="12" cy="12" r="2.5"/></svg>
+            </button>
+          </div>
+
+          <button class="submit-btn" type="submit">Увійти <span aria-hidden="true">→</span></button>
+        </form>
+        <p id="login-message" role="alert" aria-live="polite"></p>
+
+        <div class="separator"><span>або</span></div>
+        <p class="signup">Ще не маєш акаунту? <a href="#">Зареєструватися</a></p>
+        <p class="secure-note"><span class="lock-dot">✓</span> Твої дані залишаються захищеними</p>
+      </div>
+      <footer class="page-footer">© Центр інформаційних систем 2026</footer>
+    </section>
+  </main>
+</body>
+</html>

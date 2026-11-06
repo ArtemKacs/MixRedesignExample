@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mix — Мої дисципліни</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 56 56" role="img">
+          <path d="M28 4 3 17.5 28 31l25-13.5L28 4Z" fill="#2788ff"/>
+          <path d="M11 23v13.2L28 46l17-9.8V23L28 32.2 11 23Z" fill="#2460ff"/>
+          <path d="M50 21v15" stroke="#8fbaff" stroke-width="3" stroke-linecap="round"/>
+          <circle cx="50" cy="39" r="2.5" fill="#8fbaff"/>
+        </svg>
+      </span>
+      <span>Mix</span>
+    </div>
+    <div class="user-area">
+      <span class="username" id="username"></span>
+      <div class="avatar" id="avatar"></div>
+    </div>
+  </header>
+
+  <aside class="sidebar">
+    <nav class="nav" aria-label="Головна навігація">
+      <button class="nav-item active" data-page="Дисципліни"><span class="nav-icon">▣</span><span class="nav-label">Дисципліни</span><span class="count" id="disciplinesCount">6</span></button>
+      <button class="nav-item" data-page="Повідомлення"><span class="nav-icon">✉</span><span class="nav-label">Повідомлення</span></button>
+      <button class="nav-item" data-page="Довідник"><span class="nav-icon">♙</span><span class="nav-label">Довідник</span></button>
+      <button class="nav-item" data-page="Вийти" id="logout-button"><span class="nav-icon">⇥</span><span class="nav-label">Вийти</span></button>
+    </nav>
+  </aside>
+
+  <main>
+    <section class="content">
+      <div class="section-head">
+        <div class="section-title"><h1>Мої дисципліни</h1><span class="total" id="total">6</span></div>
+      </div>
+      <div class="cards" id="cards"></div>
+      
+      <div class="empty" id="empty">
+        За вашим запитом дисциплін не знайдено.
+      </div>
+    </section>
+  </main>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
